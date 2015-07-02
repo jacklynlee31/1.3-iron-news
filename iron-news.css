@@ -51,7 +51,6 @@ a {
 
 a:hover {
   font-weight:bold;
-  font-variant: small-caps;
 }
 
 .content {
@@ -61,4 +60,32 @@ a:hover {
   margin: auto;
   padding: 5px;
   background:#EEF0F3;
+  line-height: 30px;
+}
+
+ol>li:nth-of-type(odd) {
+  background-color: #E3E3E5;
+}
+
+.nav-end {
+  border-top: 5px solid #8D90A1;
+  text-align:center;
+  width: 85%;
+  margin:auto;
+  padding: 5px;
+  background: #EEFOF3;
+  overflow: auto;
+}
+
+.nav-end-2>li {
+  padding: 5px;
+  display: inline;
+  width: 85%;
+}
+
+form {
+  color:#8D90A1
+  margin: auto;
+  padding: 5px;
+  text-align: center;
 }
