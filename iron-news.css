@@ -1,11 +1,11 @@
 html {
-  font-family: sans-serif;
+  font-family: Verdana;
   font-size: 16px;
   padding: 5px;
 }
 
 nav {
-  background: #7D1935;
+  background: #8D90A1;
   width: 85%;
   margin: auto;
   padding: 5px;
@@ -16,7 +16,7 @@ nav {
 nav h1 {
   font-weight: bold;
   display: inline-block;
-  color:white;
+  color:black;
 }
 
 #logo span {
@@ -40,8 +40,7 @@ nav li {
 }
 
 .nav-items {
-  color: white;
-  font-variant: small-caps;
+  color: black;
   font-size: 18px;
 }
 
@@ -52,6 +51,7 @@ a {
 
 a:hover {
   font-weight:bold;
+  font-variant: small-caps;
 }
 
 .content {
@@ -60,5 +60,5 @@ a:hover {
   width: 85%;
   margin: auto;
   padding: 5px;
-  background:#F5F3EE;
+  background:#EEF0F3;
 }
