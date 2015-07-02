@@ -67,6 +67,11 @@ ol>li:nth-of-type(odd) {
   background-color: #E3E3E5;
 }
 
+        ol { counter-reset: item }
+        li { display: block }
+        ol>li:before { content: counter(item) ". "; counter-increment: item;
+                    color: #8D90A1; }
+
 .nav-end {
   border-top: 5px solid #8D90A1;
   text-align:center;
