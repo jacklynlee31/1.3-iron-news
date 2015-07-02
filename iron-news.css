@@ -19,6 +19,16 @@ nav h1 {
   color:black;
 }
 
+.middle a {
+  display:inline;
+}
+
+.middle p {
+  color: #8D90A1;
+  line-height:100%;
+  padding:3px;
+}
+
 #logo span {
   color: white;
   border: white solid 2px;
@@ -35,13 +45,36 @@ nav ul {
 
 nav li {
   display: inline;
+  text-align:center;
+}
 
+nav li a {
   padding: 0 5px;
+}
+
+nav .login {
+  float:right;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 4px;
 }
 
 .nav-items {
   color: black;
   font-size: 18px;
+}
+
+.nav-items li:after {
+  color:white;
+  content:"|";
+  width:10px;
+  text-align:center;
+  display:inline-block;
+}
+
+.nav-items li:last-of-type:after {
+  content:"";
 }
 
 a {
@@ -78,7 +111,7 @@ ol>li:nth-of-type(odd) {
   width: 85%;
   margin:auto;
   padding: 5px;
-  background: #EEFOF3;
+  background: #EEF0F3;
   overflow: auto;
 }
 
@@ -88,9 +121,19 @@ ol>li:nth-of-type(odd) {
   width: 85%;
 }
 
+.nav-end-2{
+  width:85%
+  margin:auto;
+  text-align:center;
+  padding: 15px;
+  background: #EEF0F3;
+}
+
 form {
-  color:#8D90A1
+  color:#8D90A1;
+  width:85%;
   margin: auto;
   padding: 5px;
   text-align: center;
+  background: #EEF0F3;
 }
