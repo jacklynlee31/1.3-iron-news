@@ -19,14 +19,15 @@ nav h1 {
   color:black;
 }
 
-.middle a {
-  display:inline;
+.middle h1 {
+  line-height:100%;
 }
 
 .middle p {
   color: #8D90A1;
   line-height:100%;
   padding:3px;
+
 }
 
 #logo span {
@@ -52,12 +53,24 @@ nav li a {
   padding: 0 5px;
 }
 
-nav .login {
+.dropdown {
   float:right;
   padding: 0;
   margin: 0;
   position: relative;
   top: 4px;
+  display:none;
+}
+
+.dropdown ul{
+    background:white;
+    list-style:none;
+    position:absolute;
+}
+
+.dropdown a:hover {
+  display:block;
+  text-decoration:none;
 }
 
 .nav-items {
