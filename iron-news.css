@@ -1,5 +1,12 @@
+.html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
-  font-family: Verdana;
+  font-family: sans-serif;
   font-size: 16px;
   padding: 5px;
 }
@@ -19,14 +26,11 @@ nav h1 {
   color:black;
 }
 
-.middle h1 {
-  line-height:100%;
-}
-
 .middle p {
   color: #8D90A1;
   line-height:100%;
   padding:3px;
+  display:inline-block;
 
 }
 
@@ -53,26 +57,6 @@ nav li a {
   padding: 0 5px;
 }
 
-.dropdown {
-  float:right;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 4px;
-  display:none;
-}
-
-.dropdown ul{
-    background:white;
-    list-style:none;
-    position:absolute;
-}
-
-.dropdown a:hover {
-  display:block;
-  text-decoration:none;
-}
-
 .nav-items {
   color: black;
   font-size: 18px;
@@ -90,6 +74,19 @@ nav li a {
   content:"";
 }
 
+.login {
+  float:right;
+  padding-top:5px;
+}
+
+  .login {list-style: none;padding: 0px;margin: 0px;}
+  .login li ul {display: none;}
+  .login ul li a {display: block; padding: 5px 10px 5px 10px;text-decoration: none; background-color:#EEF0F3;
+           white-space: nowrap;}
+  .login li:hover ul {display: block; position: absolute;}
+  .login li:hover li {float: none;}
+  #drop-nav li ul li {border-top: 0px;}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -99,22 +96,30 @@ a:hover {
   font-weight:bold;
 }
 
-.content {
-  list-style-type: decimal;
-  list-style-position: inside;
-  width: 85%;
-  margin: auto;
-  padding: 5px;
-  background:#EEF0F3;
-  line-height: 30px;
+.middle {
+  display:inline-block;
+  width:85%;
+  margin:auto;
+  padding:5px;
+  line-height:15px;
+  background:#EEF0F3
 }
+
+.content {
+  width:85%;
+  margin:auto;
+  padding:5px;
+  background-color:#EEF0F3;
+  list-style-type:decimal;
+  list-style-position:inside;
+}
+
 
 ol>li:nth-of-type(odd) {
-  background-color: #E3E3E5;
+  background-color: #EEF0F3;
 }
-
         ol { counter-reset: item }
-        li { display: block }
+        li { display: block;}
         ol>li:before { content: counter(item) ". "; counter-increment: item;
                     color: #8D90A1; }
 
@@ -129,17 +134,28 @@ ol>li:nth-of-type(odd) {
 }
 
 .nav-end-2>li {
-  padding: 5px;
-  display: inline;
-  width: 85%;
+  display:inline;
 }
 
-.nav-end-2{
-  width:85%
-  margin:auto;
+.nav-end-2 li:after {
+  color:#8D90A1;
+  content:"|";
+  width: 10px;
   text-align:center;
-  padding: 15px;
-  background: #EEF0F3;
+  display:inline-block;
+}
+
+.nav-end-2 li:last-of-type:after {
+  content:"";
+}
+
+.nav-end-2 {
+  background:#EEF0F3;
+  width:85%;
+  margin:auto;
+  padding:5px;
+  overflow:auto;
+  text-align:center;
 }
 
 form {
