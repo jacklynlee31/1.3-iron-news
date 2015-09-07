@@ -1,7 +1,199 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
+.html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+
+nav {
+  background: #8D90A1;
+  width: 85%;
+  margin: auto;
+  padding: 5px;
+
+  overflow: auto;
+}
+
+h1 {
+  font-weight: bold;
+  display: inline-block;
+  color:black;
+}
+
+.middle p {
+  color: #8D90A1;
+  line-height:100%;
+  padding:3px;
+  display:inline-block;
+
+}
+
+#logo span {
+  color: white;
+  border: white solid 2px;
+  padding: 3px;
+  display: inline-block;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  text-align:center;
+}
+
+nav li a {
+  padding: 0 5px;
+}
+
+.nav-items {
+  color: black;
+  font-size: 18px;
+}
+
+.nav-items li:after {
+  color:white;
+  content:"|";
+  width:10px;
+  text-align:center;
+  display:inline-block;
+}
+
+.nav-items li:last-of-type:after {
+  content:"";
+}
+
+/*Drop Down*/
+
+.dropdown {
+  display: block;
+  margin-left: 68em;
+  padding: 10px;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.dropdown li {
+  display: block;
+  position: relative;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown ul li ul {
+    visibility: hidden;
+    position: absolute;
+}
+
+.dropdown ul li:hover > ul,
+.dropdown ul li ul:hover {
+   visibility: visible;
+   background-color: #8D90A1;
+   color: white;
+   padding: 5px;
+}
+
+.dropdown ul li ul li {
+  clear: both;
+  padding: 5px 0 5px 18px;
+  width: 100%;
+}
+
+/* END of dropdown */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight:bold;
+}
+
+.content {
+  width:85%;
+  margin:auto;
+  padding:5px;
+  background-color:#EEF0F3;
+  list-style-type:decimal;
+  list-style-position:inside;
+  font:sans-serif;
+}
+
+.content2 {
+  margin-left: .5em;
+  line-height: 2em;
+}
+.content2 a {
+  font-weight: bold;
+}
+
+.content>li:nth-of-type(-n+9) {
+  margin-left: .5em;
+}
+
+.content>li:nth-of-type(odd) {
+  background-color: #b8bac4;
+}
+
+.nav-end {
+  border-top: 5px solid #8D90A1;
+  text-align:center;
+  width: 85%;
+  margin:auto;
+  padding: 5px;
+  background: #EEF0F3;
+  overflow: auto;
+}
+
+.nav-end-2>li {
+  display:inline;
+}
+
+.nav-end-2 li:after {
+  color:#8D90A1;
+  content:"|";
+  width: 10px;
+  text-align:center;
+  display:inline-block;
+}
+
+.nav-end-2 li:last-of-type:after {
+  content:"";
+}
+
+.nav-end-2 {
+  background:#EEF0F3;
+  width:85%;
+  margin:auto;
+  padding:5px;
+  overflow:auto;
+  text-align:center;
+}
+
+form {
+  color:#8D90A1;
+  width:85%;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  background: #EEF0F3;
 }
